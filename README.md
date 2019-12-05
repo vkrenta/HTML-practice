@@ -1,1 +1,1 @@
-# HTML-practice
+# web-prog-lab
