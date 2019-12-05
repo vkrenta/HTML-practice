@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+<header class="container">
+    <div class="logo-container">
+        <div class="logo">logo</div>
+    </div>
+    <div class="theme-container">
+            <button class="btn" id="btn1">Button1</button>
+            <button class="btn" id="btn2">Button2</button>
+    </div>
+</header>
+<nav>
+        <div class="button-list-container">
+            <button class="list-logo"></button>
+            <div class="dropdown-content">
+                <a href="#">Головна</a>
+                <a href="#">Інформація</a>
+                <a href="#">Про нас</a>
+                <a href="#">Допомога</a>
+            </div>
+        </div>
+
+        <div class="menu-list-container">
+            <a href="#">Головна</a>
+            <a href="#">Інформація</a>
+            <a href="#">Про нас</a>
+            <a href="#">Допомога</a>
+        </div>
+</nav>
+<div id="palms">
+    </div>
+<main class="container">
+        <div class="wrapper-side">
+            <div class="image">
+                    <img src="images/triangle.jpg" alt="triangle">
+            </div> 
+            <article id="article-one">
+                <h1>Риби</h1>
+                Ри́би (Pisces) — парафілетична група водних хребетних тварин, зазвичай холоднокровних (точніше екзотермних) із вкритим лусками тілом та зябрами, наявними протягом всього життя. Активно рухаються за допомогою плавців (часто видозмінених) або руху всього тіла. Риби поширені як у морських, так і в прісноводних середовищах, від глибоких океанічних западин до гірських струмків. Риби мають велике значення для всіх водних екосистем як складова частина харчових ланцюгів та велике економічне значення для людини через споживання їх у їжу. Люди як виловлюють диких риб, так і розводять їх у створених з цією метою господарствах.
+            </article>
+        </div>
+        <div class="wrapper-side" id="bottom-side">
+            <article id="article-two">
+                <h1>Система числення</h1>
+                Системою числення, або нумерацією, називається сукупність правил і знаків, за допомогою яких можна відобразити (кодувати) будь-яке невід'ємне число. До систем числення висуваються певні вимоги, серед яких найбільш важливими є вимоги однозначного кодування невід'ємних чисел 0, 1,… з деякої їх скінченної множини — діапазону Р за скінченне число кроків і можливості виконання щодо чисел арифметичних і логічних операцій. Крім того, системи числення розв'язують задачу нумерації, тобто ефективного переходу від зображень чисел до номерів, які в даному випадку повинні мати мінімальну кількість цифр. Від вдалого чи невдалого вибору системи числення залежить ефективність розв'язання зазначених задач і її використання на практиці.
+            </article>
+                <div class="image" id="second-img">
+                    <img  src="images/penguine.jpg" alt="penguine">
+                </div>
+        </div>
+        <div class="wrapper" id="vertical-content-wrapper">
+            <div class="vertical-content">
+               <div><img src="images/img-3.jpg" alt="triangle"></div>
+                
+               <div class="text1">
+                   <article>
+                    <h1>назва</h1>
+                    блабла блаыагцдфц уани униунгйу ащгуцнаи пгпагцнагй щмайг щапнеам нейам
+                    </article>
+                </div>
+            </div>
+            <div class="vertical-content">
+                <div><img src="images/img-4.jpg" alt="triangle"></div>
+                <div class="text1">
+                        <article>
+                         <h1>назва</h1>
+                         блабла блаыагцдфц уани униунгйу ащгуцнаи пгпагцнагй щмайг щапнеам нейам
+                         </article>
+                     </div>
+            </div>
+            <div class="vertical-content">
+                <div><img src="images/img-5.jpg" alt="triangle"></div>
+                <div class="text1">
+                        <article>
+                         <h1>назва</h1>
+                         блабла блаыагцдфц уани униунгйу ащгуцнаи пгпагцнагй щмайг щапнеам нейам
+                         </article>
+                     </div>
+            </div>
+        </div>
+</main>
+<div class="formed container">
+    <form method="POST">
+        <fieldset>
+            <legend><b>Контактна інформація</b></legend>
+            <div class="input-items">
+                            <input type="text" id="name" placeholder="Ім'я" class="input">
+                            <div id="errName"></div>
+                            <input type="text" id="last-name" placeholder="Прізвище" class="input">
+                            <div id="errLastName"></div>
+                            <input type="email" id="email" placeholder="Email" class="input">
+                            <div id="errEmail"></div>
+                            <input type="password" id="password" class="input" placeholder="Пароль">
+                            <div id="errPassword"></div>
+                        
+            </div>
+            <div style="margin-left: 10px">
+                <table id="form-table" style="width: 100%">
+                    <tr>
+                        <th>Стать</th>
+                        <th id="gender">
+                            <div><input type="radio" name="man" id="man">
+                            <label for="man">Чоловіча</label></div>
+                            <br>
+                            <div><input type="radio" name="man" id="woman">
+                            <label for="woman">Жіноча</label></div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td colspan="2" id="errGender"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="birth">Дата народження</label></th>
+                        <th><input type="date" id="birth"></th>
+                    </tr>
+                    <tr>
+                        <td colspan="2" id="errBirth"></td>
+                    </tr>
+                    <tr>
+                        <th>Місто</th>
+                        <th>
+                            <select id="cities">
+                                <option value="">Вінниця</option>
+                                <option value="">Дніпро</option>
+                                <option value="">Донецьк</option>
+                                <option value="">Житомир</option>
+                                <option value="">Запоріжжя</option>
+                                <option value="">Івано-Франківськ</option>
+                                <option value="">Київ</option>
+                                <option value="">Кропивницький</option>
+                                <option value="">Луганськ</option>
+                                <option value="">Луцьк</option>
+                                <option value="">Львів</option>
+                                <option value="">Миколаїв</option>
+                                <option value="">Одеса</option>
+                                <option value="">Полтава</option>
+                                <option value="">Рівне</option>
+                                <option value="">Суми</option>
+                                <option value="">Тернопіль</option>
+                                <option value="">Ужгород</option>
+                                <option value="">Харків</option>
+                                <option value="">Херсон</option>
+                                <option value="">Хмельницький</option>
+                                <option value="">Черкаси</option>
+                                <option value="">Чернівці</option>
+                                <option value="">Чернігів</option>
+                            </select>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+            <p>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox"><b>Я погоджуюсь з тим, що треба з чимось погодитись</b></label>
+                <div id="errCheckbox"></div>
+            </p>
+            <div class="submit-button">
+                <a id="submit" class="btn">Відправити</a>
+            </div>
+            
+
+        </fieldset>
+    </form>
+</div>
+<div class="table-container">
+    <table class="tabled">
+        <tr>
+            <th colspan="2" rowspan="2" style="border: 0; background-color: #fff;"></th>
+            <th colspan="10" id="table-head">Number of hours worked per week</th>
+        </tr>
+        <tr>
+            <th>&lt6</th>
+            <th>6 - 12</th>
+            <th>13 - 14</th>
+            <th>15 - 18</th>
+            <th>19 - 21</th>
+            <th>22 - 24</th>
+            <th>25 - 27</th>
+            <th>28 - 21</th>
+            <th>32 - 34</th>
+            <th>35+</th>
+        </tr>
+        <tr>
+            <th rowspan="3" id="table-head">Number of years formal childcare related experience</th>
+            <th>&lt 1 year</th>
+            <td>R2500 to R3000</td>
+            <td>R3000 to R4000</td>
+            <td>R4000 to R4500</td>
+            <td>R4500 to R5500</td>
+            <td>R5500 to R6000</td>
+            <td>R6000 to R6500</td>
+            <td>R6500 to R7000</td>
+            <td>R7000 to R7500</td>
+            <td>R7500 to R8000</td>
+            <td>R8500+</td>
+        </tr>
+        <tr>
+            <th>1 - 3 years</th>
+            <td>R2500 to R3000</td>
+            <td>R3000 to R4000</td>
+            <td>R4000 to R4500</td>
+            <td>R4500 to R5500</td>
+            <td>R5500 to R6000</td>
+            <td>R6000 to R6500</td>
+            <td>R6500 to R7000</td>
+            <td>R7000 to R7500</td>
+            <td>R7500 to R8000</td>
+            <td>R8500+</td>
+        </tr>
+        <tr>
+            <th>4+ years</th>
+            <td>R2500 to R3000</td>
+            <td>R3000 to R4000</td>
+            <td>R4000 to R4500</td>
+            <td>R4500 to R5500</td>
+            <td>R5500 to R6000</td>
+            <td>R6000 to R6500</td>
+            <td>R6500 to R7000</td>
+            <td>R7000 to R7500</td>
+            <td>R7500 to R8000</td>
+            <td>R8500+</td>
+        </tr>
+    </table>
+</div>
+<div id="canvas-container">
+    <canvas height="188px" width="400px" id="canvas">
+    </canvas>
+</div>
+<footer>
+      <div class="contact-info">
+        <article>
+            © Vasyl Krenta<br>
+            All rights reserved<br>
+            Lviv, (093) 139-76-95
+        </article>
+      </div>
+      <div class="icons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+      </div>  
+</footer>
+</body>
+<script src="source.js"></script>
+<script src="xonix.js"></script>
+<script src="dom.js"></script>
+</html>
